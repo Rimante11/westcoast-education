@@ -1,13 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import Home from './pages/Home/Home';
 import Courses from './pages/Courses/Courses';
 import Teachers from './pages/Teachers/Teachers';
 import Course from './pages/Courses/Course/Course';
 import Teacher from './pages/Teachers/Teacher/Teacher';
 import Header from './layout/Header/Header'
-
-
 
 
 function App() {

@@ -59,10 +59,18 @@
     {
       "id": 8,
       "courseNumber": 2458,
-      "title": "Technology in social life",
-      "duration": "3 weeks",
+      "courseName": "Technology in social life",
+      "length": "3 weeks",
       "description": "The program combines a thorough grounding in digital social science with the skills needed for engaging in the analysis of social data. This unique combination provides graduates with the ability to understand and contribute to creating ethical social platforms. ",
       "startDate": "2023-05-16"
+    },
+    {
+      "id": "15",
+      "courseNumber": "5544",
+      "courseName": "Sista course",
+      "length": "4 weeks",
+      "description": "Dagens sista kurs, släpp och vila, glöm inte koka kaffe och dricka vatten.",
+      "startDate": "2023-02-02"
     }
   ],
   "teachers": [
@@ -73,7 +81,10 @@
       "personalIdNumber": "19780808-0657",
       "email": "celiajerri@mail.com",
       "phoneNumber": "0700764053",
-      "competencies": ["Bachelor in finance", "Master in bank management"]
+      "competencies": [
+        "Bachelor in finance",
+        "Master in bank management"
+      ]
     },
     {
       "id": 2,
@@ -82,7 +93,10 @@
       "personalIdNumber": "19880807-1273",
       "email": "kenyalindsey@mail.com",
       "phoneNumber": "0711598778",
-      "competencies": ["Phd in psychology", "Responsible for BGA university hospital psychology section"]
+      "competencies": [
+        "Phd in psychology",
+        "Responsible for BGA university hospital psychology section"
+      ]
     },
     {
       "id": 3,
@@ -91,7 +105,10 @@
       "personalIdNumber": "19820209-0914",
       "email": "monterofrancisca@mail.com",
       "phoneNumber": "0728757240",
-      "competencies": ["Phd in finances", " Diploma in law finances"]
+      "competencies": [
+        "Phd in finances",
+        " Diploma in law finances"
+      ]
     },
     {
       "id": 4,
@@ -100,7 +117,10 @@
       "personalIdNumber": "19890521-1941",
       "email": "younparker@mail.com",
       "phoneNumber": "0726655785",
-      "competencies": ["Phd in computer science", "Thesis in data applying technologies"]
+      "competencies": [
+        "Phd in computer science",
+        "Thesis in data applying technologies"
+      ]
     }
   ]
 }

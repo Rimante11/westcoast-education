@@ -1,9 +1,6 @@
 import {useContext} from 'react';
-
 import ListContext from '../../store/list-context';
-
 import useProjectData from '../../Hooks/use-project-data';
-
 import TeachersList from '../../components/TeachersList/TeachersList';
 
 const Teachers = () => {

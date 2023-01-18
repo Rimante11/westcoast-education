@@ -7,19 +7,16 @@ import ListContext from '../../../store/list-context';
 
 const Course = () => {
     const { courseId } = useParams()
-    console.log({courseId}); // får-> {courseId: '2} exempelvis
-
+    
     useProjectData({url:'http://localhost:3010/courses', type:'courses'})
     const context = useContext(ListContext);
     const [course, setCourse] = useState(null);
-
-    console.log("fetchData from Course sida", useProjectData); //consolar config=>{_s();}
+    console.log("Context mano: ",context);
     
     useEffect(() => {
         const currentCourse = context.courses.find(course => course.id === +courseId )
         setCourse(currentCourse);
-        console.log("Setcourse/currentCourse",setCourse(currentCourse)); //consolar undefined
-        console.log("Current course", currentCourse); //consolar course array {id:2, coursNumber: 102, tittle: 'JavaScript 2'}
+        
     }, [courseId, context.courses])
 
     return ( 
