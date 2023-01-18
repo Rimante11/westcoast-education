@@ -1,0 +1,106 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "courseNumber": 1441,
+      "courseName": "Auditing",
+      "length": "4 weeks",
+      "description": "The course covers what auditors do, perceptions of how audit creates value, and the auditor's role in society through an in-depth analysis of audit practice, laws and regulations and relevant theory about auditing. The focus is on the statutory audits of private companies, but the course also analyzes the borders of auditing in order to problematize what constitutes the 'core' of auditing.",
+      "startDate": "2023-02-18"
+    },
+    {
+      "id": 2,
+      "courseNumber": 2302,
+      "courseName": "Business analytics",
+      "length": "8 weeks",
+      "description": "The course is designed for students with a basic knowledge of statistics, and the content of the course will be of practical nature. It covers methods for data mining and business analytics and their usage in making strategic business decisions.",
+      "startDate": "2023-05-02"
+    },
+    {
+      "id": 3,
+      "courseNumber": 4412,
+      "courseName": "Economics",
+      "length": "4 weeks",
+      "description": "Economics is the study of how goods and services are produced, distributed and consumed, exploring the factors that affect supply and demand. It examines how markets work, how wealth is distributed, and how scarce resources are allocated.",
+      "startDate": "2023-03-15"
+    },
+    {
+      "id": 4,
+      "courseNumber": 1414,
+      "courseName": "Finance",
+      "length": "6 weeks",
+      "description": "For non-financial executives who require a better understanding of the financial impact of business decisions.Build your understanding of the core financial dimensions of business and accelerate your development as business leaders with our online finance programmes.",
+      "startDate": "2023-03-29"
+    },
+    {
+      "id": 5,
+      "courseNumber": 1005,
+      "courseName": "International business",
+      "length": "4 weeks",
+      "description": "The international business major is an interdisciplinary degree administered by the Department of Business and Economics that combines courses in business, economics, foreign language and other areas to ensure students adequate preparation for positions with global corporations, banks, government and other.",
+      "startDate": "2023-04-12"
+    },
+    {
+      "id": 6,
+      "courseNumber": 1618,
+      "courseName": "Personal financial planning",
+      "length": "3 weeks",
+      "description": "Generally, the course is designed for beginners, emphasizing improving financial literacy. It starts with an in-depth study of the time value of money as the foundation for understanding and appreciating the many applications of finance to analyze the personal decisions we make.",
+      "startDate": "2023-04-28"
+    },
+    {
+      "id": 7,
+      "courseNumber": 1927,
+      "courseName": "Psychology",
+      "length": "5 weeks",
+      "description": "Explore the science of psychology with online courses exploring everything from the inner-workings of the mind to the importance of cognition at work.",
+      "startDate": "2023-04-01"
+    },
+    {
+      "id": 8,
+      "courseNumber": 2458,
+      "title": "Technology in social life",
+      "duration": "3 weeks",
+      "description": "The program combines a thorough grounding in digital social science with the skills needed for engaging in the analysis of social data. This unique combination provides graduates with the ability to understand and contribute to creating ethical social platforms. ",
+      "startDate": "2023-05-16"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "firstName": "Celia",
+      "lastName": "Jerri",
+      "personalIdNumber": "19780808-0657",
+      "email": "celiajerri@mail.com",
+      "phoneNumber": "0700764053",
+      "competencies": ["Bachelor in finance", "Master in bank management"]
+    },
+    {
+      "id": 2,
+      "firstName": "Kenya",
+      "lastName": "Lindsey",
+      "personalIdNumber": "19880807-1273",
+      "email": "kenyalindsey@mail.com",
+      "phoneNumber": "0711598778",
+      "competencies": ["Phd in psychology", "Responsible for BGA university hospital psychology section"]
+    },
+    {
+      "id": 3,
+      "firstName": "Francisca",
+      "lastName": "Montero",
+      "personalIdNumber": "19820209-0914",
+      "email": "monterofrancisca@mail.com",
+      "phoneNumber": "0728757240",
+      "competencies": ["Phd in finances", " Diploma in law finances"]
+    },
+    {
+      "id": 4,
+      "firstName": "Youn",
+      "lastName": "Parker",
+      "personalIdNumber": "19890521-1941",
+      "email": "younparker@mail.com",
+      "phoneNumber": "0726655785",
+      "competencies": ["Phd in computer science", "Thesis in data applying technologies"]
+    }
+  ]
+}
