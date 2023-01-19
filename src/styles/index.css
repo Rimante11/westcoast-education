@@ -13,12 +13,6 @@ serif; */
   margin: 0;
 }
 
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -27,29 +21,11 @@ ul {
   list-style: none;
 }
 
-
-/*--HEADER STYLING --*/
-
-.schoolLogo {
-  width: 150px;
-  height: auto;
-}
-
-.userLogo {
-  width: 50px;
-  height: auto;
-}
-
+/*--HOME PAGE STYLING--*/
 .header {
   background-color: var(--header-blue);
   display: flex;
   justify-content: space-between;
-}
-
-.headerText {
-  font-family: 'Playfair Display';
-  color: white;
-  font-weight: 200;
 }
 
 .headersDiv {
@@ -58,96 +34,351 @@ ul {
   align-items: center;
 }
 
+.navList{
+  display: flex;
+  flex-direction: row;
+}
+
+.navLi {
+  color: #fff;
+  padding-right: 10px;
+}
+
 .logoText {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
-.navList {
-  list-style-type: none;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-
-  /*fixa hem kurser lärare lining*/
-
-}
-
-.navLi {
+.headerText {
+  font-family: 'Playfair Display';
   color: white;
-  padding-right: 30px;
-  font-size: 20px;
-  font-weight: 100;
-  display: flex;
-  flex-direction: row;
+  font-weight: 200;
+  font-size: 18px;
 }
 
-/*--Home page content styling--*/
+.schoolLogo {
+  width: 80px;
+  height: auto;
+}
 
-.courseListHomePage,
-.teacherListHomePage {
-  cursor: pointer;
+.aboutWrapper {
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.homeRubriker {
+  font-size: 24px;
+  font-family: 'Playfair Display';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 .aboutHome {
   display: flex;
-  justify-content: center;
-}
-
-/*--- Teacher styling ---*/
-
-.userLogo {
-  width: 50px;
-  height: auto;
-  background-color: #8f9093;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.cardWrapper {
-  
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.teacherCard {
-  background-color: var(--lightgrey);
-  padding: 10px;
-  width: 250px;
-  height: 350px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 0px 15px 20px 15px;
+  text-align: justify;
+  padding-bottom: 40px;
+}
+
+.homeTitle {
+  font-family: 'Playfair Display';
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.coursesHome {
+  background-color: rgb(94, 80, 63);
+}
+
+.coursesTitle {
+  color: #fff;
+}
+
+.courseListHome {
+  color:#fff;
+  padding-bottom: 30px;
+  font-size: 16px;
+}
+
+.courseListHomePage{
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 300px;
   border-radius: 5px;
 }
 
-/*//////////////////////////////////////////*/
-/*--MODAL STYLING--*/
-
-.modalContainer {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 50px;
-  z-index: 1000;
-  width: 400px;
-  height: 500px;
+.courseListHomePage:nth-child(odd){
+  background-color: rgb(198, 172, 143);
+  width: 300px;
+  border-radius: 5px;
+  color: black;
 }
 
-.modalOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, .7);
-  z-index: 1000;
+.courseListHomePage:hover {
+  background-color: rgb(234, 224, 213);
+}
+
+.teachersListHomePage {
+  background-color: var(--lightgrey);
+  padding-top: 10px;
+}
+
+.teacherListTitle {
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.homeListTeachers{
+  padding-bottom: 40px;
+  margin: auto;
+  display: table;
+  padding-top: 10px;
+}
+
+.teacherListHomePage {
+  padding-bottom: 10px;
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: var(--greyshade);
+}
+
+.teacherListHomePage:hover {
+  background-color: var(--header-blue);
+  color: #fff;
+}
+
+.footerContainer {
+  background-color: var(--header-blue);
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+/*--Courses / Teacher pages styling--*/
+
+.coursesTeacherH1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+@media(min-width: 786px) {
+
+  /*--HEADER STYLING --*/
+  
+    .schoolLogo {
+      width: 150px;
+      height: auto;
+    }
+  
+    .userLogo {
+      width: 50px;
+      height: auto;
+    }
+  
+    .header {
+      background-color: var(--header-blue);
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .headerText {
+      font-family: 'Playfair Display';
+      font-size: 28px;
+      color: white;
+      
+    }
+  
+    .headersDiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .logoText {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .navList {
+      list-style-type: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+  
+      /*fixa hem kurser lärare lining*/
+  
+    }
+  
+    .navLi {
+      color: white;
+      padding-right: 30px;
+      font-size: 20px;
+      font-weight: 100;
+      display: flex;
+      flex-direction: row;
+    }
+
+  /*--Home page content styling--*/
+  
+    .courseListHomePage,
+    .teacherListHomePage {
+      cursor: pointer;
+    }
+
+    .aboutWrapper {
+      border: 2px solid black;
+      border-radius: 5px;
+      margin: 10px;
+      width: 600px;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .aboutHome {
+      display: flex;
+      justify-content: center;
+      width: 500px;
+      height: auto;
+      margin: auto;
+    }
+
+    .coursesHome {
+      width: 600px;
+      border-radius: 5px;
+      margin: auto;
+      justify-content: center;
+    }
+
+    .courseListHome {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      display: table;
+      padding-top: 15px;
+    }
+
+    .courseListHomePage:hover {
+      background-color: rgb(234, 224, 213);
+    }
+
+    .teachersListHomePage {
+      width: 600px;
+      margin: auto;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .homeListTeachers {
+      margin: auto;
+      display: table;
+      padding-top: 10px;
+    }
+    
+    .teacherListHomePage {
+      border: 2px solid white;
+      padding: 10px;
+      background-color: var(--greyshade);
+    }
+
+    .teacherListHomePage:hover {
+      background-color: var(--header-blue);
+      color: #fff;
+    }
+
+  /*--- Teacher styling ---*/
+    .userLogo {
+      width: 50px;
+      height: auto;
+      background-color: #8f9093;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .cardWrapper {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  
+    .teacherCard {
+      background-color: var(--lightgrey);
+      padding: 10px;
+      width: 250px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    /*--MODAL courses STYLING--*/
+    .modalContainer {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 50px;
+      z-index: 1000;
+      width: 400px;
+      height: 500px;
+    }
+
+    .modalOverlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, .7);
+      z-index: 1000;
+    }
+
+    /* -- MODAL ADD TEACHER STYLING --*/
+    .modalContainerTeacher {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 50px;
+      z-index: 1000;
+      width: 400px;
+      height: 500px;
+    }
+
+    .modalOverlayTeacher {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, .7);
+      z-index: 1000;
+    }
+    
 }
 
 

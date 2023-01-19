@@ -20,7 +20,7 @@ const Courses = () => {
 
     return ( 
         <>
-        <h1>Courses</h1>
+        <h1 className='coursesTeacherH1'>Courses</h1>
         <button onClick={() => setIsOpen(true)}>Add course</button>
 
         {/*creating modal for addCourse */}

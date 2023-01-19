@@ -26,6 +26,11 @@ const AddCourse = () => {
 
     const body = { id, courseNumber, courseName, length, description, startDate };
 
+    /*
+    lösning kanske kika, pga jag fetchar till courses, men inget uppdates cours id kanske prova
+    https://stackoverflow.com/questions/74815103/react-ui-dom-is-not-updating-after-data-insertion-in-json-server
+    */
+
     fetch('http://localhost:3010/courses', {
       method: 'POST',
       headers: {

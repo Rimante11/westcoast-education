@@ -5,6 +5,7 @@ import Teachers from './pages/Teachers/Teachers';
 import Course from './pages/Courses/Course/Course';
 import Teacher from './pages/Teachers/Teacher/Teacher';
 import Header from './layout/Header/Header'
+import Footer from './layout/Footer/footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/courses/:courseId' element={<Course />}/>
         <Route path='/teachers/:teacherId' element={<Teacher />}/>
       </Routes>
+      <Footer />
     </div>
   </Router>
   );
