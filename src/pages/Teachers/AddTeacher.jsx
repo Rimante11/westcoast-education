@@ -37,48 +37,53 @@ const AddTeacher = () => {
 
   return(
     <>
-    <div>Add teacher</div>
-      <form onSubmit={onSave}>
+    <div className='modalTitle'>Add teacher</div>
+      <form onSubmit={onSave} className="addTeacherForm">
 
-        <div>
-          <label htmlFor="firstName">First name: </label>
+        <div className='formDiv'>
+          <label htmlFor="firstName">First name </label><br />
             <input 
+              className='formInputs'
               id='firstName'
               placeholder='First name'
               ref={teacherFirstNameInputRef}
             />
         </div>
 
-        <div>
-          <label htmlFor="lastName">Last name: </label>
+        <div className='formDiv'>
+          <label htmlFor="lastName">Last name </label><br />
             <input 
+              className='formInputs'
               id='lastName'
               placeholder='Last name'
               ref={teacherLastNameInputRef}
             />
         </div>
 
-        <div>
-          <label htmlFor="personalIdNumber">Personal ID number: </label>
+        <div className='formDiv'>
+          <label htmlFor="personalIdNumber">Personal ID number </label><br />
             <input 
+              className='formInputs'
               id='personalIdNumber'
               placeholder='ex: 12345678-1234'
               ref={teacherPersonalIdNumberInputRef}
             />
         </div>
 
-        <div>
-          <label htmlFor="email">Email: </label>
+        <div className='formDiv'>
+          <label htmlFor="email">Email</label><br />
             <input 
+              className='formInputs'
               id='email'
               placeholder='email@gmail.com'
               ref={teacherEmailInputRef}
             />
         </div>
 
-        <div>
-          <label htmlFor="phoneNumber">Phone: </label>
+        <div className='formDiv'>
+          <label htmlFor="phoneNumber">Phone </label><br />
             <input 
+              className='formInputs'
               id='phoneNumber'
               placeholder='0729434754'
               ref={teacherPhoneNumberInputRef}
@@ -86,6 +91,7 @@ const AddTeacher = () => {
         </div>
 
         <div>
+          <br /><br />
           <button /*disabled={buttonDisable}*/>
                     Add Course
           </button>

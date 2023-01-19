@@ -4,7 +4,6 @@ console.log(useState)
 const AddCourse = () => {
    
   const courseNameInputRef = useRef();
-  const courseIdInputRef = useRef();
   const courseNumberInputRef = useRef();
   const courseLengthInputRef = useRef();
   const courseStartDateInputRef = useRef();
@@ -15,16 +14,15 @@ const AddCourse = () => {
     e.preventDefault();
 
     const courseName = courseNameInputRef.current.value;
-    const id = courseIdInputRef.current.value;
     const courseNumber = courseNumberInputRef.current.value;
     const length = courseLengthInputRef.current.value;
     const startDate = courseStartDateInputRef.current.value;
     const description = courseDescriptionInputRef.current.value;
 
-    console.log("Course inputs check: ", courseName, id, courseNumber, length, startDate, description);
+    console.log("Course inputs check: ", courseNumber, courseName, length, startDate, description);
 
 
-    const body = { id, courseNumber, courseName, length, description, startDate };
+    const body = { courseNumber, courseName, length, description, startDate };
 
     /*
     lösning kanske kika, pga jag fetchar till courses, men inget uppdates cours id kanske prova
@@ -43,48 +41,45 @@ const AddCourse = () => {
 
     return (
       <>
-        <div> <h2>Add Course</h2> </div>
+        <div className='modalTitle'>Add Course</div>
           <form onSubmit={onSave}>
 
-              <div>
-                <label htmlFor="courseName">Course name: </label>
+              <div className='formDiv'>
+                <label htmlFor="courseName">Course name </label><br />
                   <input 
+                    className='formInputs'
                     id='courseName'
                     placeholder='Course name'
                     ref={courseNameInputRef}
                   />
               </div>
 
-              <div>
-                <label htmlFor="id">Id: </label>
-                  <input 
-                    id='id'
-                    placeholder='id'
-                    ref={courseIdInputRef}
-                  />
-              </div>
+              
 
-              <div>
-                <label htmlFor="courseNumber">Course id: </label>
+              <div className='formDiv'>
+                <label htmlFor="courseNumber">Course id </label><br />
                   <input 
+                    className='formInputs'
                     id='courseNumber'
                     placeholder='1234'
                     ref={courseNumberInputRef}
                   />
               </div>
 
-              <div>
-                <label htmlFor="courseNumber">Duration: </label>
+              <div className='formDiv'>
+                <label htmlFor="courseNumber">Duration </label><br />
                   <input 
+                    className='formInputs'
                     id='length'
                     placeholder='4 weeks'
                     ref={courseLengthInputRef}
                   />
               </div>
 
-              <div>
-                <label htmlFor="startDate">Start date: </label>
+              <div className='formDiv'>
+                <label htmlFor="startDate">Start date </label><br />
                   <input 
+                    className='formInputs'
                     type='date'
                     id='startDate'
                     placeholder='4 weeks'
@@ -92,9 +87,10 @@ const AddCourse = () => {
                   />
               </div>
 
-              <div>
-                <label htmlFor="description">Description: </label>
+              <div className='formDiv'>
+                <label htmlFor="description">Description </label><br />
                   <textarea 
+                  
                     rows='4'
                     cols='50'
                     id='description'
@@ -106,6 +102,7 @@ const AddCourse = () => {
               
 
             <div>
+              <br /><br />
                 <button
                   /*disabled={buttonDisable}*/
                 >

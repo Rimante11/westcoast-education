@@ -7,15 +7,21 @@ import ListContext from '../../../store/list-context';
 
 const Teacher = () => {
     const { teacherId } = useParams()
-
+ 
     useProjectData({url:'http://localhost:3010/teachers', type:'teachers'})
     const context = useContext(ListContext);
     const [teacher, setTeacher] = useState(null);
+    console.log("teacher context: ", context);
     
     useEffect(() => {
         const currentTeacher = context.teachers.find(teacher => teacher.id === +teacherId )
         setTeacher(currentTeacher);
+
+        console.log("Current teacher CHECK: ", currentTeacher);
+
     }, [teacherId, context.teachers])
+
+    
 
     return ( 
         <>

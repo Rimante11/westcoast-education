@@ -71,6 +71,22 @@
       "length": "4 weeks",
       "description": "Dagens sista kurs, släpp och vila, glöm inte koka kaffe och dricka vatten.",
       "startDate": "2023-02-02"
+    },
+    {
+      "courseNumber": "8558",
+      "courseName": "Torsdags news",
+      "length": "3 weeks",
+      "description": "Torsdags course jpohiopoijkölkn lhhjjhghjkökjh....",
+      "startDate": "2023-02-05",
+      "id": "H3t04qL"
+    },
+    {
+      "courseNumber": "9876",
+      "courseName": "Tessstinnnnng",
+      "length": "2 weeks",
+      "description": "Testing courses dont know why does not show in course card check.",
+      "startDate": "2023-01-26",
+      "id": "pXmYkgE"
     }
   ],
   "teachers": [
@@ -123,34 +139,12 @@
       ]
     },
     {
-      "firstName": "Linea",
-      "id": 5
-    },
-    {
-      "firstName": "Linea",
-      "lastName": "Gustavsson",
-      "id": 6
-    },
-    {
-      "firstName": "Linea",
-      "lastName": "Gustavsson",
-      "personalIdNumber": "19991128-5057",
-      "id": 7
-    },
-    {
-      "firstName": "Linea",
-      "lastName": "Gustavsson",
-      "personalIdNumber": "19991128-5057",
-      "email": "linea@gmail.com",
-      "id": 8
-    },
-    {
-      "firstName": "Linea",
-      "lastName": "Gustavsson",
-      "personalIdNumber": "19991128-5057",
-      "email": "linea@gmail.com",
-      "phoneNumber": "0729437249",
-      "id": 9
+      "firstName": "Luna ",
+      "lastName": "Munna",
+      "personalIdNumber": "19980709-4547",
+      "email": "munaluna@gmail.com",
+      "phoneNumber": "0728567898",
+      "id": 10
     }
   ]
 }

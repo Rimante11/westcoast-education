@@ -378,7 +378,34 @@ ul {
       background-color: rgba(0, 0, 0, .7);
       z-index: 1000;
     }
-    
+
+    .modalTitle {
+      font-size: 20px;
+      font-weight: 800;
+      padding: 20px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .addTeacherForm {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .formDiv {
+      background-color: aqua;
+      align-items: center;
+      padding-left: 10px;    
+    }
+
+    .formInputs {
+      border-radius: 5px;
+      border: 1px solid var(--header-blue);
+      padding: 5px;
+    }
 }
 
 
