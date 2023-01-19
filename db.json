@@ -121,6 +121,36 @@
         "Phd in computer science",
         "Thesis in data applying technologies"
       ]
+    },
+    {
+      "firstName": "Linea",
+      "id": 5
+    },
+    {
+      "firstName": "Linea",
+      "lastName": "Gustavsson",
+      "id": 6
+    },
+    {
+      "firstName": "Linea",
+      "lastName": "Gustavsson",
+      "personalIdNumber": "19991128-5057",
+      "id": 7
+    },
+    {
+      "firstName": "Linea",
+      "lastName": "Gustavsson",
+      "personalIdNumber": "19991128-5057",
+      "email": "linea@gmail.com",
+      "id": 8
+    },
+    {
+      "firstName": "Linea",
+      "lastName": "Gustavsson",
+      "personalIdNumber": "19991128-5057",
+      "email": "linea@gmail.com",
+      "phoneNumber": "0729437249",
+      "id": 9
     }
   ]
 }

@@ -5,6 +5,7 @@ import TeachersList from '../../components/TeachersList/TeachersList';
 
 //importerar Modal
 import ModalTeacher from '../../ModalTeacher';
+import AddTeacher from './AddTeacher';
 
 const Teachers = () => {
 
@@ -22,7 +23,7 @@ const Teachers = () => {
 
         {/*Creating Modal for add teacher */}
         <ModalTeacher open={isOpen} onClose={() => setIsOpen(false)}>
-            Fancy Modal
+            <AddTeacher />
         </ModalTeacher>
 
         {context.teachers && <TeachersList teachers={context.teachers}/>}

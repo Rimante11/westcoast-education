@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 console.log(useState)
 
 const AddCourse = () => {
-  
+   
   const courseNameInputRef = useRef();
   const courseIdInputRef = useRef();
   const courseNumberInputRef = useRef();
