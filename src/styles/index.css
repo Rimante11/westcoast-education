@@ -240,6 +240,108 @@ ul {
   padding: 15px;
 }
 
+/*--MODAL ADD COURSE STYLING--*/
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1000;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 45px;
+  z-index: 1000;
+  width: 250px;
+  height: 500px;
+}
+
+.closeModalBtn {
+  margin: 5px;
+  padding: 5px;
+  color: #fff;
+  background-color: var(--header-blue);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin-top: -35px;
+  margin-right: -33px;
+}
+
+.modalTitle {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--header-blue);
+  color: rgb(234, 224, 213);
+}
+
+.addTeacherForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--lightgrey);
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.formDiv {
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 5px; 
+}
+
+.formInputs {
+  border-radius: 5px;
+  border: 1px solid var(--header-blue);
+  padding: 5px;
+}
+
+.formAddBtn {
+  background-color: rgb(246, 86, 0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+}
+
+.modalOverlayTeacher {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1000;
+}
+
+.modalContainerTeacher {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 45px;
+  z-index: 1000;
+  width: 280px;
+}
+
 @media(min-width: 786px) {
 
   /*--HEADER STYLING --*/

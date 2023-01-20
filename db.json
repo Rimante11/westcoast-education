@@ -71,8 +71,8 @@
       "length": "6 weeks",
       "description": "Courses are for absolute nbeginners, with passion to dive into coding and learn basic of Javascript. In this course we will learn about Javascript algorithms and data structures. We will take a look of modern JS, and how to create first toDo list using all we will learn in this course.",
       "startDate": "2023-03-20"
-      
     }
+
   ],
   "teachers": [
     {
@@ -124,12 +124,25 @@
       ]
     },
     {
-      "firstName": "Competence ",
-      "lastName": "Compasson",
-      "personalIdNumber": "19781012-1515",
-      "email": "competence@gmail.com",
-      "phoneNumber": "0707898587",
-      "competencies": "Java Css React Osv",
+      "id": 5,
+      "firstName": "Maya",
+      "lastName": "Kartesso",
+      "personalIdNumber": "19890523-9143",
+      "email": "kartessomaya@mail.com",
+      "phoneNumber": "0722354750",
+      "competencies": [
+        "Computer science ",
+        "Javascript ",
+        "React "
+      ]
+    },
+    {
+      "firstName": "Juliano ",
+      "lastName": "Commiako",
+      "personalIdNumber": "19681122-5231",
+      "email": "juliano@gmail.com",
+      "phoneNumber": "0787895823",
+      "competencies": "Java Css React Photoshop",
       "id": 12
     }
   ]

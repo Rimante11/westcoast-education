@@ -37,7 +37,10 @@ const AddTeacher = () => {
       body: JSON.stringify(body),
     });
 
+  }
 
+  function refreshPage(){
+      window.location.reload(false);
   }
 
   return(
@@ -108,7 +111,7 @@ const AddTeacher = () => {
         <div>
           <br /><br />
           <button className='formAddBtn'
-            onClick={()=>alert("Teacher added!")}
+            onClick={refreshPage}
           >
                     Add Course
           </button>
