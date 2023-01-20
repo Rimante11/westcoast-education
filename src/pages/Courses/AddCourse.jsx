@@ -19,9 +19,6 @@ const AddCourse = () => {
     const startDate = courseStartDateInputRef.current.value;
     const description = courseDescriptionInputRef.current.value;
 
-    console.log("Course inputs check: ", courseNumber, courseName, length, startDate, description);
-
-
     const body = { courseNumber, courseName, length, description, startDate };
 
     e.target.reset(); //clear inputs efter submit
@@ -100,10 +97,11 @@ const AddCourse = () => {
 
             <div>
               <br /><br />
-                <button className='formAddBtn'
+                <button 
+                  className='formAddBtn'
                   onClick={refreshPage}
                 >
-                    Add Course
+                  Add Course
                 </button>
             </div>
 

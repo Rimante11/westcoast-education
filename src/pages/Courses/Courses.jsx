@@ -20,16 +20,23 @@ const Courses = () => {
 
     return ( 
         <>
-        <h1 className='coursesTeacherH1'>Courses</h1>
-        <button onClick={() => setIsOpen(true)} className='addCourseTeacherModalBtn'>Add course</button>
+            <h1 className='coursesTeacherH1'>Courses</h1>
+                <button 
+                    onClick={() => setIsOpen(true)} className='addCourseTeacherModalBtn'
+                >
+                    Add course
+                </button>
 
-        {/*creating modal for addCourse */}
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-            
-            <AddCourse/>
-        </Modal>
+            <Modal 
+                open={isOpen} 
+                onClose={() => setIsOpen(false)}
+            >
+                <AddCourse/>
+            </Modal>
 
-        {context.courses && <CoursesList courses={context.courses}/>}
+            {context.courses && 
+                <CoursesList courses={context.courses}/>
+            }
         </>
      );
 }

@@ -71,8 +71,15 @@
       "length": "6 weeks",
       "description": "Courses are for absolute nbeginners, with passion to dive into coding and learn basic of Javascript. In this course we will learn about Javascript algorithms and data structures. We will take a look of modern JS, and how to create first toDo list using all we will learn in this course.",
       "startDate": "2023-03-20"
+    },
+    {
+      "courseNumber": "8282",
+      "courseName": "Biomedical analysis",
+      "length": "9 weeks",
+      "description": "Intensive course and deep diving into subject that allows you to analyse and research different parts of virus and bacterias.",
+      "startDate": "2023-03-13",
+      "id": 10
     }
-
   ],
   "teachers": [
     {
@@ -144,6 +151,15 @@
       "phoneNumber": "0787895823",
       "competencies": "Java Css React Photoshop",
       "id": 12
+    },
+    {
+      "firstName": "Lucas",
+      "lastName": "Karlsson",
+      "personalIdNumber": "19991120-1157",
+      "email": "karlsson@gmail.com",
+      "phoneNumber": "0787874587",
+      "competencies": "Biomedical science expert",
+      "id": 13
     }
   ]
 }

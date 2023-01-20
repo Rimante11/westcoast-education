@@ -11,13 +11,10 @@ const Course = () => {
     useProjectData({url:'http://localhost:3010/courses', type:'courses'})
     const context = useContext(ListContext);
     const [course, setCourse] = useState(null);
-    console.log("Context course: ",context);
     
     useEffect(() => {
         const currentCourse = context.courses.find(course => course.id === +courseId )
         setCourse(currentCourse);
-
-        console.log("Current course CHECK: ",currentCourse);
         
     }, [courseId, context.courses])
 

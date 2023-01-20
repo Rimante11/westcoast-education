@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 console.log(useEffect);
-
-
-const ListContext = React.createContext({ //här skappar man contextApi
-  //Two components -provider, consumer
+const ListContext = React.createContext({ 
   updateList: () => {},
   handleError: () => {},
   teachers: [],

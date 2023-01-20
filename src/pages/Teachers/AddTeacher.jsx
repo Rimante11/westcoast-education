@@ -1,9 +1,6 @@
 import { useState, useRef } from 'react';
 console.log(useState);
 
-
-
-
 const AddTeacher = () => {
 
   const teacherFirstNameInputRef = useRef();
@@ -22,8 +19,6 @@ const AddTeacher = () => {
     const email = teacherEmailInputRef.current.value;
     const phoneNumber = teacherPhoneNumberInputRef.current.value;
     const competencies = teacherCompetenciesInputRef.current.value;
-
-    console.log("Teacher inputs check: ", firstName, lastName, personalIdNumber, email, phoneNumber, competencies);
 
     const body = { firstName, lastName, personalIdNumber, email, phoneNumber, competencies };
 
