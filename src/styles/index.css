@@ -169,6 +169,68 @@ ul {
   text-align: center;
 }
 
+/*--Teacher-Card-styling*/
+.userLogo {
+  width: 50px;
+  height: auto;
+  background-color: var(--greyshade);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+}
+
+.teacherCard {
+  background-color: var(--lightgrey);
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+  padding: 40px 15px 50px 10px;
+}
+
+.aboutCardInfo {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.detaljSida{
+  padding-top: 50px;
+  padding-bottom: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+/*--Course-Teacher sidor list styling*/
+
+.addCourseTeacherModalBtn {
+  background-color: rgb(246, 86, 0);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  float: right;
+  margin-right: 20px;
+}
+
+.listItem:nth-child(odd) {
+  background-color: rgb(198, 172, 143);
+  padding: 10px;
+  color: black;
+}
+
+.listItem {
+  background-color: rgb(94, 80, 63);
+  color: #fff;
+  padding: 10px;
+
+}
+
+.list{
+  margin: 40px 20px 10px 0px;
+}
+
 /*--Courses / Teacher pages styling--*/
 
 .coursesTeacherH1 {
@@ -324,13 +386,15 @@ ul {
     .teacherCard {
       background-color: var(--lightgrey);
       padding: 10px;
-      width: 250px;
-      height: 350px;
+      width: 350px;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       border-radius: 5px;
+      padding-bottom: 40px;
+      padding-top: 40px;
     }
 
     /*--MODAL courses STYLING--*/
@@ -366,7 +430,6 @@ ul {
       padding: 50px;
       z-index: 1000;
       width: 400px;
-      height: 500px;
     }
 
     .modalOverlayTeacher {
@@ -379,6 +442,20 @@ ul {
       z-index: 1000;
     }
 
+    .closeModalBtn{
+      margin: 5px;
+      padding: 5px;
+      color: #fff;
+      background-color: var(--header-blue);
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      float: right;
+      margin-top: -35px;
+      margin-right: -33px;
+    }
+
     .modalTitle {
       font-size: 20px;
       font-weight: 800;
@@ -387,24 +464,86 @@ ul {
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: var(--header-blue);
+      color:rgb(234, 224, 213);
     }
 
     .addTeacherForm {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      background-color: var(--lightgrey);
+      padding-bottom: 20px;
+      padding-top: 20px;
     }
 
     .formDiv {
-      background-color: aqua;
       align-items: center;
-      padding-left: 10px;    
+      padding-left: 20px;  
+      padding-top: 5px;
+      
     }
 
     .formInputs {
       border-radius: 5px;
       border: 1px solid var(--header-blue);
       padding: 5px;
+    }
+
+    .formAddBtn {
+      background-color: rgb(246, 86, 0);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px 5px 10px;
+      cursor: pointer;
+      display: flex;
+      margin: auto;
+    }
+
+    .addCourseTeacherModalBtn {
+      background-color: rgb(246, 86, 0);
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+      position: relative;
+      float: right;
+      margin-right: 20px;
+    }
+
+    .list{
+      padding-top: 45px;
+      padding-bottom: 15px;
+    }
+
+    .listItem:nth-child(odd){
+      background-color: rgb(198, 172, 143);
+      padding: 10px;
+      color: black;
+    }
+
+    .listItem {
+      background-color: rgb(94, 80, 63);
+      color: rgb(234, 224, 213);
+      padding: 10px;
+    }
+
+    .detaljSida {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      justify-content: center;
+      padding-top:50px;
+      padding-bottom: 100px;
+  
+    }
+
+    .aboutCardInfo {
+      background-color: #fff;
+      padding: 10px;
+      text-align: justify;
     }
 }
 

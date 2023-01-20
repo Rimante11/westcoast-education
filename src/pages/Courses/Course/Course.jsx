@@ -23,18 +23,23 @@ const Course = () => {
 
     return ( 
         <>
-            <div className="teacherCard">
-                <img src={courseBookLogo} alt="courseBookLogo" className="userLogo" />
-                    <div> Course id: {courseId}</div>
-                        {course && 
-                            <div>
-                                <h3>{course.courseName}</h3>
-                                <p>{course.length}</p>
-                                <p>{course.startDate}</p>
-                                <p><b>About course</b></p>
-                                <p>{course.description}</p>
-                            </div>
-                        }
+            <div className="detaljSida">
+                <div className="teacherCard">
+                    <img src={courseBookLogo} alt="courseBookLogo" className="userLogo" /><br /><br />
+                        <div className="aboutCardInfo">
+                            {course && 
+                                <div>
+                                    <h3>{course.courseName}</h3>
+                                    <p> Course id: {courseId}</p>
+                                    <p>Duaration: {course.length}</p>
+                                    <p>Start date: {course.startDate}</p>
+                                    <br />
+                                    <p><b>About course</b></p>
+                                    <p>{course.description}</p>
+                                </div>
+                            }
+                        </div>
+                </div>
             </div>
         </> 
     );

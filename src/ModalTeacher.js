@@ -11,7 +11,7 @@ export default function ModalTeacher ({ open, children, onClose }) {
     <>
       <div className="modalOverlayTeacher"></div>
       <div className="modalContainerTeacher">
-        <button onClick={onClose}>Close Modal</button>
+        <button onClick={onClose} className="closeModalBtn">X</button>
         {children} 
       </div>
     </>,

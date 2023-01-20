@@ -25,22 +25,26 @@ const Teacher = () => {
 
     return ( 
         <>
-            <div> Teacher id: {teacherId}</div>
+            <div className="detaljSida"> 
                 <div className="teacherCard">
-                    <img src={userLogo} alt="userLogo" className="userLogo" />
-                        {teacher && 
-                            <div>
-                                <h3>{teacher.firstName} {teacher.lastName}</h3>
-                                <p>Personal id: {teacher.personalIdNumber}</p>
-                                <p>Email: {teacher.email}</p>
-                                <p>Phone: {teacher.phoneNumber}</p>
-                                <b>Competencies</b>
-                                <p>{teacher.competencies}</p>
-                
-                            </div>
-                   
-                        }
-                </div>    
+                    <img src={userLogo} alt="userLogo" className="userLogo" /><br /><br />
+                        <div className="aboutCardInfo">
+                            {teacher && 
+                                <div>
+                                    <h3>{teacher.firstName} {teacher.lastName}</h3>
+                                    <p>id: {teacherId}</p>
+                                    <p>Personal id: {teacher.personalIdNumber}</p>
+                                    <p>Email: {teacher.email}</p>
+                                    <p>Phone: {teacher.phoneNumber}</p>
+                                    <b>Competencies</b>
+                                    <p>{teacher.competencies } </p>
+                    
+                                </div>
+                    
+                            }
+                        </div>
+                </div> 
+            </div>   
         </> 
     );
 }

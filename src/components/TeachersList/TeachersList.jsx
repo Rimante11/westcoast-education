@@ -3,9 +3,9 @@ const TeachersList = ({teachers}) => {
     return (
             <ul className='list'>
             {teachers.map((teacher) => (
-                <li className='list__list-item' key={teacher.id}>
+                <li className='list__list-item listItem' key={teacher.id}>
                     <div>
-                        Name: {teacher.firstName} {teacher.lastName}
+                        Name: <b>{teacher.firstName} {teacher.lastName}</b>
                     </div>
                     <div>
                         Personal id: {teacher.personalIdNumber}

@@ -2,6 +2,8 @@ import { useState, useRef } from 'react';
 console.log(useState);
 
 
+
+
 const AddTeacher = () => {
 
   const teacherFirstNameInputRef = useRef();
@@ -9,7 +11,7 @@ const AddTeacher = () => {
   const teacherPersonalIdNumberInputRef = useRef();
   const teacherEmailInputRef = useRef();
   const teacherPhoneNumberInputRef = useRef();
-  //const teacherCompetenciesInputRef = useRef();
+  const teacherCompetenciesInputRef = useRef();
 
   const onSave = (e) => {
     e.preventDefault();
@@ -19,11 +21,13 @@ const AddTeacher = () => {
     const personalIdNumber = teacherPersonalIdNumberInputRef.current.value;
     const email = teacherEmailInputRef.current.value;
     const phoneNumber = teacherPhoneNumberInputRef.current.value;
-    //const competencies = teacherCompetenciesInputRef.current.value;
+    const competencies = teacherCompetenciesInputRef.current.value;
 
-    console.log("Teacher inputs check: ", firstName, lastName, personalIdNumber, email, phoneNumber);
+    console.log("Teacher inputs check: ", firstName, lastName, personalIdNumber, email, phoneNumber, competencies);
 
-    const body = { firstName, lastName, personalIdNumber, email, phoneNumber };
+    const body = { firstName, lastName, personalIdNumber, email, phoneNumber, competencies };
+
+    e.target.reset(); //clear inputs efter submit
 
     fetch('http://localhost:3010/teachers', {
       method: 'POST',
@@ -32,6 +36,7 @@ const AddTeacher = () => {
       },
       body: JSON.stringify(body),
     });
+
 
   }
 
@@ -90,9 +95,21 @@ const AddTeacher = () => {
             />
         </div>
 
+        <div className='formDiv'>
+          <label htmlFor="competencies">Competencies </label><br />
+            <input 
+              className='formInputs'
+              id='competencies'
+              placeholder='competencies...'
+              ref={teacherCompetenciesInputRef}
+            />
+        </div>
+
         <div>
           <br /><br />
-          <button /*disabled={buttonDisable}*/>
+          <button className='formAddBtn'
+            onClick={()=>alert("Teacher added!")}
+          >
                     Add Course
           </button>
         </div>

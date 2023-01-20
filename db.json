@@ -65,28 +65,13 @@
       "startDate": "2023-05-16"
     },
     {
-      "id": "15",
-      "courseNumber": "5544",
-      "courseName": "Sista course",
-      "length": "4 weeks",
-      "description": "Dagens sista kurs, släpp och vila, glöm inte koka kaffe och dricka vatten.",
-      "startDate": "2023-02-02"
-    },
-    {
-      "courseNumber": "8558",
-      "courseName": "Torsdags news",
-      "length": "3 weeks",
-      "description": "Torsdags course jpohiopoijkölkn lhhjjhghjkökjh....",
-      "startDate": "2023-02-05",
-      "id": "H3t04qL"
-    },
-    {
-      "courseNumber": "9876",
-      "courseName": "Tessstinnnnng",
-      "length": "2 weeks",
-      "description": "Testing courses dont know why does not show in course card check.",
-      "startDate": "2023-01-26",
-      "id": "pXmYkgE"
+      "id": 9,
+      "courseNumber": "857",
+      "courseName": "JavaScript",
+      "length": "6 weeks",
+      "description": "Courses are for absolute nbeginners, with passion to dive into coding and learn basic of Javascript. In this course we will learn about Javascript algorithms and data structures. We will take a look of modern JS, and how to create first toDo list using all we will learn in this course.",
+      "startDate": "2023-03-20"
+      
     }
   ],
   "teachers": [
@@ -98,7 +83,7 @@
       "email": "celiajerri@mail.com",
       "phoneNumber": "0700764053",
       "competencies": [
-        "Bachelor in finance",
+        "Bachelor in finance ",
         "Master in bank management"
       ]
     },
@@ -110,7 +95,7 @@
       "email": "kenyalindsey@mail.com",
       "phoneNumber": "0711598778",
       "competencies": [
-        "Phd in psychology",
+        "Phd in psychology ",
         "Responsible for BGA university hospital psychology section"
       ]
     },
@@ -122,7 +107,7 @@
       "email": "monterofrancisca@mail.com",
       "phoneNumber": "0728757240",
       "competencies": [
-        "Phd in finances",
+        "Phd in finances ",
         " Diploma in law finances"
       ]
     },
@@ -134,17 +119,18 @@
       "email": "younparker@mail.com",
       "phoneNumber": "0726655785",
       "competencies": [
-        "Phd in computer science",
+        "Phd in computer science ",
         "Thesis in data applying technologies"
       ]
     },
     {
-      "firstName": "Luna ",
-      "lastName": "Munna",
-      "personalIdNumber": "19980709-4547",
-      "email": "munaluna@gmail.com",
-      "phoneNumber": "0728567898",
-      "id": 10
+      "firstName": "Competence ",
+      "lastName": "Compasson",
+      "personalIdNumber": "19781012-1515",
+      "email": "competence@gmail.com",
+      "phoneNumber": "0707898587",
+      "competencies": "Java Css React Osv",
+      "id": 12
     }
   ]
 }

@@ -24,6 +24,8 @@ const AddCourse = () => {
 
     const body = { courseNumber, courseName, length, description, startDate };
 
+    e.target.reset(); //clear inputs efter submit
+
     /*
     lösning kanske kika, pga jag fetchar till courses, men inget uppdates cours id kanske prova
     https://stackoverflow.com/questions/74815103/react-ui-dom-is-not-updating-after-data-insertion-in-json-server
@@ -42,7 +44,7 @@ const AddCourse = () => {
     return (
       <>
         <div className='modalTitle'>Add Course</div>
-          <form onSubmit={onSave}>
+          <form onSubmit={onSave} className="addTeacherForm">
 
               <div className='formDiv'>
                 <label htmlFor="courseName">Course name </label><br />
@@ -90,9 +92,9 @@ const AddCourse = () => {
               <div className='formDiv'>
                 <label htmlFor="description">Description </label><br />
                   <textarea 
-                  
+                    className='formInputs'
                     rows='4'
-                    cols='50'
+                    cols='20'
                     id='description'
                     placeholder='Description...'
                     ref={courseDescriptionInputRef}
@@ -103,7 +105,8 @@ const AddCourse = () => {
 
             <div>
               <br /><br />
-                <button
+                <button className='formAddBtn'
+                  onClick={()=> alert("Course added!")}
                   /*disabled={buttonDisable}*/
                 >
                     Add Course

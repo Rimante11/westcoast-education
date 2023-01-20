@@ -19,7 +19,7 @@ const Teachers = () => {
         <>
         <h1 className='coursesTeacherH1'>Teachers</h1>
 
-        <button onClick={() => setIsOpen(true)}>Add teacher</button>
+        <button onClick={() => setIsOpen(true)} className='addCourseTeacherModalBtn'>Add teacher</button>
 
         {/*Creating Modal for add teacher */}
         <ModalTeacher open={isOpen} onClose={() => setIsOpen(false)}>
