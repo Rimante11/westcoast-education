@@ -10,4 +10,4 @@ describe('Courses page', () => {
     const title = screen.getByText(/Courses/i); 
     expect(title).toBeInTheDocument();
   })
-});
+});  
